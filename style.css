@@ -1,0 +1,509 @@
+/* debut de body */
+body{
+    margin:0;
+    padding:0;
+}
+/* Fin de debute de body */
+
+/* debute de header et main */
+header{
+   padding:5px 0 0 50px;
+}
+main{
+   padding-left:50px;
+   /* margin:5px 0; */
+}
+/* fin de header et nav */
+
+/* debute de nav */
+nav.logo{
+   font-size:30px;
+}
+nav {
+   display: flex;
+    justify-content: space-between;
+    padding:20px 0px;
+}
+   
+nav ul{
+   display:inline-flex;
+   list-style:none;
+}
+nav ul li{
+  padding:0 30px 0px 20px;
+}
+nav ul li a{
+   font: 500 14px 'Raleway', sans-serif;
+   color: rgb(66, 65, 65);
+   text-decoration: none;
+}
+nav ul li a:hover{
+   color: #0065FC;
+   border-top:#0065FC 2px solid;
+   padding-top:30px;
+
+   }
+   
+nav ul li a.active{
+   color: #0065FC;
+}
+/* fin de nav */
+
+/* debute de Titre */
+.Titre h1{
+   font:600 16px 'Raleway', sans-serif;
+  
+}
+.Titre p{
+   font: 500 14px 'Raleway', sans-serif;
+   color: rgb(71, 71, 71);
+   margin: 0;
+}
+.Titre h1,p{
+    line-height:10px;
+   
+}
+/* fin de titre */
+
+.Rechercher{
+   display: flex;
+   border:1px rgb(230, 225, 225) solid;
+   width:200px;
+   height:45px;
+   border-radius:10px;
+   margin:-2px 0;
+      
+}
+.Rechercher button.map{
+  border-radius:10px 0 0 10px ;
+  padding:11px;
+  background-color:#F2F2F2;
+  border: none;
+}
+.Rechercher button.map:hover{
+   background-color:rgb(240, 234, 234);
+}
+.Rechercher input {
+   border: none;
+   padding:15px 0 10px 20px;
+}
+::placeholder{
+   font-weight:bold;
+    color: rgb(17, 16, 16);
+}
+.Rechercher button.espaceblue{
+   border-radius:0 10px 10px 0 ;
+   padding:11px 20px;
+   background-color:#0065FC;
+   border: none;
+   color:white;
+   
+}
+.Rechercher button.espaceblue:hover{
+   background-color: blue;
+}
+.mob-cherchebtn{
+   display: none;
+}
+/* fin de bar de Recherecher */
+
+/* debute de Filtres */
+.Filtres{
+   display: flex;
+   /* padding-left:; */
+   margin:-10px 0;
+}
+.Filtres .paragraph{
+   font: 600 13px 'Raleway', sans-serif;
+   margin-top:40px;
+}
+.contenue{
+   display: flex;
+}
+.contenue i {
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   background-color:#F2F2F2;
+   width:36px;
+   height:36px;
+   border-radius:50%;
+   background-color:#DEEBFF;
+   color:#0065FC;
+}
+.contenue p{
+   font: 600 13px 'Raleway', sans-serif;
+    padding:7px 0 20px 10px;
+  
+}
+
+.filtres-contenue .contenue{
+   border:2px solid rgb(231, 229, 229);
+   width:fit-content;
+   height:36px;
+   border-radius:40px;
+   margin:30px 15px;
+   padding-right: 10px;
+  
+}
+.filtres-contenue .contenue:hover{
+    background-color: #f5f6f7;
+    cursor: pointer;
+    
+    }
+.filtres-contenue{
+   display: flex;
+ }
+.animeaux-btn-mobile{
+   display: none;
+}
+ /* fin de filtres */
+ 
+/* debute d info */
+ 
+
+.info{
+   display:flex;
+   padding-left:  50px;
+   margin:-15px 0;
+}
+
+.info .fas{
+   font-size:12px;
+   color: #0066ff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border:1px rgb(214, 210, 210) solid;
+   width:17px;
+   height:17px;
+   border-radius:50px;
+  margin-top:3px ;
+}
+.info p{
+   font:300 14px 'Raleway', sans-serif; 
+   color:rgb(71, 70, 70);
+   padding-left:5px;
+} 
+/* fin d'info */
+
+.hébergement{
+   background-color: #F2F2F2;
+   width:840px;
+   height:650px;
+   border-radius:10px;
+}
+
+.hébergement img{
+ width:200px;
+ height:150px;
+ border-radius:10px;
+}
+
+.hébergement p{
+   font: 500 12px 'Raleway', sans-serif;
+   color: rgb(68, 68, 68);
+}
+ .hébergement h2{   
+  font: 600 15px 'Raleway', sans-serif; 
+  padding:40px 0 0 67px; 
+  margin:2px 0;
+}  
+.hébergement h3{
+   font:600 14px 'Raleway', sans-serif;
+}
+
+.carte-conteneur{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;   
+}
+
+.carte-conteneur .carte{
+   width:200px;
+    height:220px;
+   background-color:white;
+   border: 5px rgb(255, 255, 255) solid;
+    margin:13px 13px;
+    border-radius:10px;
+  
+}
+.carte-conteneur .carte:hover{
+   background-color:rgb(238, 235, 235);
+   opacity:0.9; 
+}
+.carte-conteneur .carte .fa{
+   color:rgb(238, 234, 234);
+  font-size:12px;
+   letter-spacing:-10px;
+}
+.carte-conteneur  h3,p,.fa{
+   margin:5px ;
+}
+.carte-conteneur .carte  .checked{
+   color: #0065FC;
+}
+.hébergement .plus a{
+   color: rgb(22, 22, 22);
+   padding:30px 0 0 20px;
+   font:600 14px 'Raleway', sans-serif;
+   text-decoration: none;
+ }
+.hébergement .plus{
+   padding:15px 0 0 30px;
+}
+.hébergement .plus a:hover{
+   color: #0065FC;   
+}
+span{
+    font-weight:bold;
+    color:black;
+}
+  /* fin de hébergement */
+
+.populaire{
+   position: relative;
+   background-color:#F2F2F2;
+   width:360px;
+   height:650px;  
+   margin:0px 30px;
+   border-radius:10px;
+}
+.populaire img{
+   width:160px;
+   height:145px;
+   border-radius:10px;
+}
+.populairecontainer h2{
+   font:600 15px 'Raleway', sans-serif; 
+    padding:25px 0 0 35px;
+    margin-bottom:-15px;
+ }
+.populairecontainer h3{
+   font:600 14px 'Raleway', sans-serif;
+   margin-left:10px;
+}
+.populairecontainer p{
+   font: 500 12px 'Raleway', sans-serif;
+   color: rgb(68, 68, 68);
+}
+.populairecontainer .fa{
+   padding-top:40px;
+   font-size:12px;
+   color:rgb(230, 225, 225);
+   letter-spacing:-10px;
+}
+.populairecontainer .checked{
+   color:  #0065FC;
+}
+.populairecontainer .fas{
+  position:absolute;
+  top:25px;
+  right:25px;  
+}
+.populairecontainer .aside-carte{
+    width:300px;
+    height:150px;
+    border:rgb(255, 255, 255) solid 5px;
+    background-color:white;
+    margin:30px;
+    border-radius: 10px;
+    
+}
+.populairecontainer .aside-carte:hover{
+   background-color:rgb(241, 241, 241);
+   opacity:0.9;
+   border-radius:10px 0 0 10px;
+   
+}
+.populairecontainer .aside-carte img{
+   float:left;
+   margin-right:10px;
+}
+.populairecontainer .aside-carte h3,p{
+   margin:5px;
+}
+/* fin de section po^pulaire */
+
+.location{
+   display:flex;
+  margin-top:30px;
+  }
+
+/* Fin de section de location */
+
+/* debute de section d'Activité */
+.activité .vieuxport img, .calanque img{
+   width:265px;
+   height:370px;
+   border-radius:6px 6px 0 0; 
+}
+.fortdepomégue img{
+   width:265px;
+   height:170px;
+   border-radius:6px 6px 0 0;
+}
+.collective2 img{
+   width:265px;
+   height:152px;
+   border-radius:6px 6px 0 0;
+}
+.ilesdefrioul img{
+    width:265px;
+    height:130px;
+    border-radius:6px 6px 0 0;
+}
+.header-activité{
+   font: bold 16px 'Raleway', sans-serif;
+   padding-top:40px;  
+}
+.activité p{
+   font: 600 13px 'Raleway', sans-serif;
+   padding-left: 10px;
+}
+.activité {
+     display:flex;
+     flex-direction: row;
+     justify-content:center;
+     align-items: center;
+     padding-right:65px;
+     margin:-35px 0;        
+}
+.vieuxport,.calanque{
+   border: solid 1px rgb(255, 255, 255);
+   background-color: rgb(255, 255, 255);
+   border-radius:10px;
+   box-shadow:2px 2px 2px 2px  rgb(228, 226, 226);
+   margin:0 40px;  
+}
+.vieuxport:hover{
+   background-color: rgb(255, 255, 255);
+   opacity:0.9; 
+}
+.calanque:hover{
+ background-color: rgb(255, 255, 255);
+ opacity:0.9;
+}
+.fortdepomégue:hover{
+   background-color: rgb(255, 255, 255);
+   opacity:0.9;
+ }
+.ilesdefrioul:hover {
+   background-color: white;
+   opacity:0.9;
+ }
+.églis:hover {
+   background-color: white;
+   opacity:0.9;
+ }
+.parc:hover{
+   background-color: white;
+   opacity:0.9;
+} 
+.fortdepomégue,.ilesdefrioul,.églis,.parc {
+   border: solid 1px rgb(255, 255, 255);
+   background-color: rgb(255, 255, 255);   
+   border-radius:10px;
+   box-shadow:2px 2px 2px 2px rgb(228, 226, 226);
+   margin:40px 0;
+}
+
+
+/* fin de section activite */
+
+/* debute de footer */
+
+footer{
+   background-color: #F2F2F2;
+   margin-top:50px;
+}
+.footerconetneur h2{
+   font: 600 15px 'Raleway', sans-serif;
+}
+
+.footerconetneur {
+    display: flex;
+   
+}
+.footerconetneur ul{
+   list-style: none;
+        
+}
+.footerconetneur  .box2,.box3{
+  padding: 0 200px;
+}
+.footerconetneur .box2{
+   padding-right:10px;
+} 
+
+.footerconetneur ul li a{
+   font: 400 13px 'Raleway', sans-serif;
+   color:rgb(102, 100, 100);
+   text-decoration: none;   
+}
+.footerconetneur ul li a:hover{
+   color:#0065FC;
+}
+/*  Fin de CSS desk top*/
+
+/* debute de mediaquery */
+@media (max-width:414px){
+
+nav {
+        display:block;
+        position: relative;
+     }
+
+nav ul .active{
+    position:absolute;
+    top:35px;
+    right:30px; 
+ }
+ .activité div{
+    width:267px;
+    height:200px;
+ }
+ .activité div img{
+   width:267px;
+   height:135px;
+}
+.hébergement{
+   width:300px;
+}
+.hébergement .carte{
+      width:267px;
+      height:200px;
+   }
+.hébergement div img{
+     width:260px;
+     height:135px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+  
+
