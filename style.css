@@ -69,8 +69,8 @@ nav ul li a.active{
 .Rechercher{
    display: flex;
    border:1px rgb(230, 225, 225) solid;
-   width:200px;
-   height:45px;
+   width:225px;
+   /* height:40px; */
    border-radius:10px;
    margin:-2px 0;
       
@@ -94,7 +94,7 @@ nav ul li a.active{
 }
 .Rechercher button.espaceblue{
    border-radius:0 10px 10px 0 ;
-   padding:11px 20px;
+   padding:15px 20px;
    background-color:#0065FC;
    border: none;
    color:white;
