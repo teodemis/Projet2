@@ -449,42 +449,6 @@ footer{
 }
 /*  Fin de CSS desk top*/
 
-/* debute de mediaquery */
-@media (max-width:414px){
-
-nav {
-        display:block;
-        position: relative;
-     }
-
-nav ul .active{
-    position:absolute;
-    top:35px;
-    right:30px; 
- }
- .activité div{
-    width:267px;
-    height:200px;
- }
- .activité div img{
-   width:267px;
-   height:135px;
-}
-.hébergement{
-   width:300px;
-}
-.hébergement .carte{
-      width:267px;
-      height:200px;
-   }
-.hébergement div img{
-     width:260px;
-     height:135px;
-  }
-}
-
-
-
 
 
 
