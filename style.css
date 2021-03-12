@@ -417,58 +417,159 @@ span{
 /* debute de footer */
 
 footer{
+   display:flex;
+   width:100%;
+   height:auto;
    background-color: #F2F2F2;
    margin-top:50px;
 }
-.footerconetneur h2{
+footer h2{
    font: 600 15px 'Raleway', sans-serif;
 }
 
-.footerconetneur {
-    display: flex;
-   
+footer ul{
+   list-style: none;    
 }
-.footerconetneur ul{
-   list-style: none;
-        
+footer ul li{
+   padding:0 80px 0 10px;
 }
-.footerconetneur  .box2,.box3{
-  padding: 0 200px;
-}
-.footerconetneur .box2{
-   padding-right:10px;
-} 
 
-.footerconetneur ul li a{
+footer ul li a{
    font: 400 13px 'Raleway', sans-serif;
    color:rgb(102, 100, 100);
-   text-decoration: none;   
+   text-decoration: none; 
 }
-.footerconetneur ul li a:hover{
+footer ul li a:hover{
    color:#0065FC;
 }
 /*  Fin de CSS desk top*/
 
 
 
+@media screen and (max-width:1024px){
+     main{
+        padding:10px;
+        margin:0;
+     }
+     header{
+        padding:10px 20px;
+        margin:0;
+     }
+   .location{
+      display: flex;
+      flex-direction: row-reverse;
+     margin-top:0;
+   }
+   .populaire{
+      margin:0 10px;
+      position: relative;
+   }
+   .carte-conteneur .carte{
+      margin-right:60px;
+   }
+   .info{
+      margin:10px 20px;
+      padding:0;
+   }
+   .hébergement{
+      height:875px;
+      width:680px;
+      margin:0 10px;
+   }
 
+    .calanque , .calanque img, .ilesdefrioul, .ilesdefrioul img,
+    .fortdepomégue,.fortdepomégue img, .parc, .parc img, .églis,.églis img
+    {
+       width:280px;
+    
+    }
+    .activité{
+       margin:30px 0 0 10px;
+       background-color:#f7f7f7;
+       opacity:0.9;
+    }
+  .activité .vieuxport img {
+      width:355px;
+      height:150px;
+   background-color:#f7f7f7;
+   }
+   .vieuxport{
+      position:absolute;
+      margin:0;
+      bottom:133px;
+      left:20px;
+      border-radius:10px 10px 0 0;
+      
+   
+   }
+   .header-activité{
+      position:absolute;
+      bottom:310px;
+      left:20px;
+   }
 
-
-
-
-
-
- 
- 
- 
- 
-
-
-
-
-
-
-
-
+  .Rechercher .espaceblue:hover{
+     background-color:blue;
+   }
+   nav ul li a:hover{
+      color:blue;
+   }
+   nav ul li a.active1{
+      color: #0065FC;
+   }
+   .filtres-contenue .contenue:hover{
+      background-color:rgb(243, 242, 242);
+   }
   
+}
+@media screen and (max-width:768px) {
+   .filtres-contenue .contenue{
+      margin: 30px 5px;
+   }
+   .hébergement{
+      height:1700px;
+   }
+   .carte-conteneur .carte  {
+       width:300px;
+   }
+   .carte-conteneur .carte img {
+      width:300px;
+  }
+   .activité {
+      display: flex;
+      flex-direction: column;
+      background-color:transparent;
+      float:left;
+      position:absolute;
+      top:115%;
+      margin-right:10px;
+   }
+   .header-activité{
+      position: absolute;
+      bottom:-5%;
+      left:45px;
+   }
+   .fortdepomégue,.fortdepomégue img, .églis,.églis img, .parc, .parc img {
+       width:300px;
+       height:120px;
+      
+   }
+   .activité .vieuxport img {
+      width:300px;
+      height:120px;
+   }
+  .activité .vieuxport{
+      position: absolute;
+      bottom:98%;
+   }
+   .calanque, .calanque img{
+      height:120px;
+   }
+   footer ul {
+    padding:0 40px 0 20px;
+   }
 
+ }
+
+ 
+    
