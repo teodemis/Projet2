@@ -22,6 +22,7 @@ nav.logo{
 }
 nav {
    display: flex;
+   flex-flow:row wrap;
     justify-content: space-between;
     padding:20px 0px;
 }
@@ -68,9 +69,9 @@ nav ul li a.active{
 
 .Rechercher{
    display: flex;
+   flex-flow:row wrap;
    border:1px rgb(230, 225, 225) solid;
-   width:225px;
-   /* height:40px; */
+   width:300px;
    border-radius:10px;
    margin:-2px 0;
       
@@ -100,7 +101,7 @@ nav ul li a.active{
    color:white;
    
 }
-.Rechercher button.espaceblue:hover{
+.espaceblue:hover{
    background-color: blue;
 }
 .mob-cherchebtn{
@@ -138,7 +139,7 @@ nav ul li a.active{
   
 }
 
-.filtres-contenue .contenue{
+ .contenue{
    border:2px solid rgb(231, 229, 229);
    width:fit-content;
    height:36px;
@@ -147,7 +148,7 @@ nav ul li a.active{
    padding-right: 10px;
   
 }
-.filtres-contenue .contenue:hover{
+.contenue:hover{
     background-color: #f5f6f7;
     cursor: pointer;
     
@@ -155,9 +156,6 @@ nav ul li a.active{
 .filtres-contenue{
    display: flex;
  }
-.animeaux-btn-mobile{
-   display: none;
-}
  /* fin de filtres */
  
 /* debute d info */
@@ -222,7 +220,7 @@ nav ul li a.active{
    align-items: center;   
 }
 
-.carte-conteneur .carte{
+ .carte{
    width:200px;
     height:220px;
    background-color:white;
@@ -231,11 +229,11 @@ nav ul li a.active{
     border-radius:10px;
   
 }
-.carte-conteneur .carte:hover{
+ .carte:hover{
    background-color:rgb(238, 235, 235);
    opacity:0.9; 
 }
-.carte-conteneur .carte .fa{
+ .carte .fa{
    color:rgb(238, 234, 234);
   font-size:12px;
    letter-spacing:-10px;
@@ -243,7 +241,7 @@ nav ul li a.active{
 .carte-conteneur  h3,p,.fa{
    margin:5px ;
 }
-.carte-conteneur .carte  .checked{
+ .carte  .checked{
    color: #0065FC;
 }
 .hébergement .plus a{
@@ -304,7 +302,7 @@ span{
   top:25px;
   right:25px;  
 }
-.populairecontainer .aside-carte{
+ .aside-carte{
     width:300px;
     height:150px;
     border:rgb(255, 255, 255) solid 5px;
@@ -313,17 +311,17 @@ span{
     border-radius: 10px;
     
 }
-.populairecontainer .aside-carte:hover{
+ .aside-carte:hover{
    background-color:rgb(241, 241, 241);
    opacity:0.9;
    border-radius:10px 0 0 10px;
    
 }
-.populairecontainer .aside-carte img{
+ .aside-carte img{
    float:left;
    margin-right:10px;
 }
-.populairecontainer .aside-carte h3,p{
+.aside-carte h3,p{
    margin:5px;
 }
 /* fin de section po^pulaire */
@@ -546,7 +544,6 @@ footer ul li a:hover{
    }
    .header-activité{
       position: absolute;
-      bottom:-5%;
       left:45px;
    }
    .fortdepomégue,.fortdepomégue img, .églis,.églis img, .parc, .parc img {
@@ -570,6 +567,19 @@ footer ul li a:hover{
    }
 
  }
+ @media screen and (min-width:375px){
+    nav{
+       display:block;
+    }
+   .active2{
+      position:absolute;
+       top:30px;
+       right:20px;
 
- 
-    
+   }
+   .location{
+      display:flex;
+      flex-direction:column;
+   }
+ }
+   
