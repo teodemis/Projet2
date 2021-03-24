@@ -4,34 +4,31 @@ body{
     padding:0;
 
 }
-/* Fin de debute de body */
-
-/* debute de header et main */
 header{
-   padding:5px 0 0 50px;
+  padding:0 15px;
 }
-main{
-   padding-left:50px;
-   /* margin:5px 0; */
-}
-/* fin de header et nav */
+  main{
+     display:flex;
+       flex-direction:column;
+      margin:0 15px;
+  }
 
 /* debute de nav */
-nav.logo{
-   font-size:30px;
-}
+
+
 nav {
-   display: flex;
+     display: flex;
     justify-content: space-between;
-    padding:20px 0px;
+    padding-top:30px;
 }
    
 nav ul{
-   display:inline-flex;
+   display: flex;
+   flex-flow:row wrap;
    list-style:none;
 }
 nav ul li{
-  padding:0 30px 0px 20px;
+ padding-left:40px; 
 }
 nav ul li a{
    font: 500 14px 'Raleway', sans-serif;
@@ -41,80 +38,84 @@ nav ul li a{
 nav ul li a:hover{
    color: #0065FC;
    border-top:#0065FC 2px solid;
-   padding-top:30px;
+   padding-top:40px;
 
    }
-   
-nav ul li a.active{
-   color: #0065FC;
+
+.active1{
+   color:#0065FC;
+   border-top:#0065FC 2px solid;
+   padding-top:40px;
 }
-/* fin de nav */
+
+
 
 /* debute de Titre */
+
 .Titre h1{
-   font:600 16px 'Raleway', sans-serif;
+   font:600 22px 'Raleway', sans-serif;
+   margin-bottom:5px;
   
 }
 .Titre p{
-   font: 500 14px 'Raleway', sans-serif;
+   font: 500 15px 'Raleway', sans-serif;
    color: rgb(71, 71, 71);
-   margin: 0;
+   margin-bottom:20px;
+  
 }
-.Titre h1,p{
-    line-height:10px;
-   
-}
+
 /* fin de titre */
 
 .Rechercher{
-   display: flex;
+   display:flex;
+   flex-flow:row wrap;
    border:1px rgb(230, 225, 225) solid;
-   width:225px;
-   /* height:40px; */
+   width:325px;
    border-radius:10px;
-   margin:-2px 0;
       
 }
-.Rechercher button.map{
+.map{
   border-radius:10px 0 0 10px ;
   padding:11px;
   background-color:#F2F2F2;
   border: none;
 }
-.Rechercher button.map:hover{
+map:hover{
    background-color:rgb(240, 234, 234);
 }
-.Rechercher input {
+input {
    border: none;
-   padding:15px 0 10px 20px;
+   padding:15px 0 10px 45px;
 }
 ::placeholder{
    font-weight:bold;
     color: rgb(17, 16, 16);
 }
-.Rechercher button.espaceblue{
+.espaceblue{
    border-radius:0 10px 10px 0 ;
-   padding:15px 20px;
+   padding:15px 21px;
    background-color:#0065FC;
    border: none;
    color:white;
    
 }
-.Rechercher button.espaceblue:hover{
+.espaceblue:hover{
    background-color: blue;
 }
 .mob-cherchebtn{
    display: none;
 }
-/* fin de bar de Recherecher */
 
 /* debute de Filtres */
+
 .Filtres{
    display: flex;
-   /* padding-left:; */
-   margin:-10px 0;
 }
-.Filtres .paragraph{
+.filtres-contenue{
+   display: flex;
+   flex-flow: row wrap;
+ }
+.paragraph{
    font: 600 13px 'Raleway', sans-serif;
    margin-top:40px;
 }
@@ -134,40 +135,29 @@ nav ul li a.active{
 }
 .contenue p{
    font: 600 13px 'Raleway', sans-serif;
-    padding:7px 0 20px 10px;
-  
+    padding:7px 0 20px 10px;  
 }
 
-.filtres-contenue .contenue{
+.contenue{
    border:2px solid rgb(231, 229, 229);
    width:fit-content;
    height:36px;
    border-radius:40px;
-   margin:30px 15px;
+   margin:30px 20px 25px 15px;
    padding-right: 10px;
   
 }
-.filtres-contenue .contenue:hover{
+.contenue:hover{
     background-color: #f5f6f7;
     cursor: pointer;
-    
-    }
-.filtres-contenue{
-   display: flex;
  }
-.animeaux-btn-mobile{
-   display: none;
-}
- /* fin de filtres */
- 
-/* debute d info */
- 
 
+/* debute d'info */
+ 
 .info{
    display:flex;
-   padding-left:  50px;
-   margin:-15px 0;
-}
+   padding-left:15px;
+  }
 
 .info .fas{
    font-size:12px;
@@ -188,74 +178,76 @@ nav ul li a.active{
 } 
 /* fin d'info */
 
-.hébergement{
+.hebergement{
    background-color: #F2F2F2;
-   width:840px;
+   width:1000px;
    height:650px;
-   border-radius:10px;
+   margin-right:5px;
+}
+.carte-conteneur{
+    display:flex;
+   flex-flow:row wrap;
+   justify-content: center;
+    
 }
 
-.hébergement img{
- width:200px;
+.hebergement img{
+ width:285px;
  height:150px;
- border-radius:10px;
+ border-radius:10px 10px 0 0;
 }
 
-.hébergement p{
+.hebergement p{
    font: 500 12px 'Raleway', sans-serif;
    color: rgb(68, 68, 68);
 }
- .hébergement h2{   
-  font: 600 15px 'Raleway', sans-serif; 
-  padding:40px 0 0 67px; 
-  margin:2px 0;
+ .hebergement h2{   
+  font: 600 18px 'Raleway', sans-serif; 
+  padding:20px 0 0 40px; 
+  margin-bottom:0;
+ 
 }  
-.hébergement h3{
+.hebergement h3{
    font:600 14px 'Raleway', sans-serif;
 }
 
-.carte-conteneur{
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;   
-}
-
-.carte-conteneur .carte{
-   width:200px;
-    height:220px;
+ .carte{
+   display:flex;
+   flex-flow:row wrap;
+   width:285px;
+   height:230px;
    background-color:white;
    border: 5px rgb(255, 255, 255) solid;
-    margin:13px 13px;
-    border-radius:10px;
+   margin:10px;
+   border-radius:10px;
   
 }
-.carte-conteneur .carte:hover{
+ .carte:hover{
    background-color:rgb(238, 235, 235);
    opacity:0.9; 
 }
-.carte-conteneur .carte .fa{
+ .carte .fa{
    color:rgb(238, 234, 234);
   font-size:12px;
-   letter-spacing:-10px;
+ letter-spacing:-10px;
 }
-.carte-conteneur  h3,p,.fa{
+ .carte-conteneur  h3,p,.fa{
    margin:5px ;
-}
-.carte-conteneur .carte  .checked{
+} 
+ .carte  .checked{
    color: #0065FC;
-}
-.hébergement .plus a{
+} 
+ .plus{
+   padding:15px 0 0 30px;
+ }
+ .plus a{
    color: rgb(22, 22, 22);
    padding:30px 0 0 20px;
    font:600 14px 'Raleway', sans-serif;
    text-decoration: none;
  }
-.hébergement .plus{
-   padding:15px 0 0 30px;
-}
-.hébergement .plus a:hover{
+
+ .plus a:hover{
    color: #0065FC;   
 }
 span{
@@ -265,173 +257,149 @@ span{
   /* fin de hébergement */
 
 .populaire{
+   display: flex;
+   flex-flow:row ;
+   flex-wrap:wrap;
    position: relative;
    background-color:#F2F2F2;
-   width:360px;
-   height:650px;  
-   margin:0px 30px;
+   width:400px;
+   height:650px;
+   margin-left:10px;
    border-radius:10px;
 }
 .populaire img{
    width:160px;
    height:145px;
-   border-radius:10px;
+   border-radius:10px 0 0 10px;
+}
+.conteneur-asidecarte{
+   display:flex;
+   flex-flow:row wrap;
+   justify-content: center;
 }
 .populairecontainer h2{
-   font:600 15px 'Raleway', sans-serif; 
+   font:600 17px 'Raleway', sans-serif; 
     padding:25px 0 0 35px;
-    margin-bottom:-15px;
- }
+    margin-bottom:10px;
+    }
 .populairecontainer h3{
    font:600 14px 'Raleway', sans-serif;
-   margin-left:10px;
+   margin:10px 0 0  5px;
+}
+ 
+.populairecontainer .fas{
+ position:absolute;
+ top:40px;
+ right:35px;
+
 }
 .populairecontainer p{
    font: 500 12px 'Raleway', sans-serif;
    color: rgb(68, 68, 68);
 }
+
 .populairecontainer .fa{
-   padding-top:40px;
+   padding-top:50px;
    font-size:12px;
    color:rgb(230, 225, 225);
-   letter-spacing:-10px;
+   letter-spacing:-12px;
 }
 .populairecontainer .checked{
    color:  #0065FC;
 }
-.populairecontainer .fas{
-  position:absolute;
-  top:25px;
-  right:25px;  
-}
-.populairecontainer .aside-carte{
-    width:300px;
+
+ .aside-carte{
+    display: flex;
+    width:330px;
     height:150px;
     border:rgb(255, 255, 255) solid 5px;
     background-color:white;
-    margin:30px;
     border-radius: 10px;
-    
+    margin-bottom:20px;  
 }
-.populairecontainer .aside-carte:hover{
+ .aside-carte:hover{
    background-color:rgb(241, 241, 241);
    opacity:0.9;
    border-radius:10px 0 0 10px;
    
 }
-.populairecontainer .aside-carte img{
+ .aside-carte img{
    float:left;
-   margin-right:10px;
+   margin-right:5px;
 }
-.populairecontainer .aside-carte h3,p{
-   margin:5px;
-}
-/* fin de section po^pulaire */
+
+/* fin de section populaire */
 
 .location{
    display:flex;
-  margin-top:30px;
+   margin-top:20px;
+  
+ }
+ /* section activite */
+
+ .header-activite{
+   font: 600 20px 'Raleway', sans-serif;
+   padding-left:5px;
+   margin:40px 0 0 0;
+
+ }
+ .carte-active-conteneur{
+   display:flex;
+   flex-direction: row;
+   align-items: center;
   }
 
-/* Fin de section de location */
-
-/* debute de section d'Activité */
-.activité .vieuxport img, .calanque img{
-   width:265px;
-   height:370px;
-   border-radius:6px 6px 0 0; 
+.collective1 img, .collective2 img{
+   width:336px;
+   height:193px;
+   border-radius:10px 10px 0 0;
 }
-.fortdepomégue img{
-   width:265px;
-   height:170px;
-   border-radius:6px 6px 0 0;
-}
-.collective2 img{
-   width:265px;
-   height:152px;
-   border-radius:6px 6px 0 0;
-}
-.ilesdefrioul img{
-    width:265px;
-    height:130px;
-    border-radius:6px 6px 0 0;
-}
-.header-activité{
-   font: bold 16px 'Raleway', sans-serif;
-   padding-top:40px;  
-}
-.activité p{
-   font: 600 13px 'Raleway', sans-serif;
-   padding-left: 10px;
-}
-.activité {
-     display:flex;
-     flex-direction: row;
-     justify-content:center;
-     align-items: center;
-     padding-right:65px;
-     margin:-35px 0;        
-}
-.vieuxport,.calanque{
-   border: solid 1px rgb(255, 255, 255);
-   background-color: rgb(255, 255, 255);
+.carte-active{
+   border:1px solid rgb(228, 228, 228);
    border-radius:10px;
-   box-shadow:2px 2px 2px 2px  rgb(228, 226, 226);
-   margin:0 40px;  
+   box-shadow:1px 1px 1px 1px rgb(238, 238, 238);
+   margin:18px 22px;
 }
-.vieuxport:hover{
-   background-color: rgb(255, 255, 255);
-   opacity:0.9; 
+.carte-active-longue img{
+   width:336px;
+   height:450px;
+   border-radius:10px 10px 0 0;
 }
-.calanque:hover{
- background-color: rgb(255, 255, 255);
- opacity:0.9;
-}
-.fortdepomégue:hover{
-   background-color: rgb(255, 255, 255);
-   opacity:0.9;
- }
-.ilesdefrioul:hover {
-   background-color: white;
-   opacity:0.9;
- }
-.églis:hover {
-   background-color: white;
-   opacity:0.9;
- }
-.parc:hover{
-   background-color: white;
-   opacity:0.9;
-} 
-.fortdepomégue,.ilesdefrioul,.églis,.parc {
-   border: solid 1px rgb(255, 255, 255);
-   background-color: rgb(255, 255, 255);   
+.carte-active-longue{
    border-radius:10px;
-   box-shadow:2px 2px 2px 2px rgb(228, 226, 226);
-   margin:40px 0;
+   background-color:white;
+   box-shadow:1px 1px 1px 1px rgb(247, 246, 246);
 }
-
-
-/* fin de section activite */
-
+.carte-active-conteneur p{
+   font: 700 16px 'Raleway', sans-serif;
+   padding:5px;
+}
+.carte-active-longue:hover,
+.carte-active:hover{
+   background-color:rgb(241, 241, 241);
+   opacity:0.9;
+}
+ 
 /* debute de footer */
 
 footer{
    display:flex;
+   flex-flow:row wrap;
    width:100%;
    height:auto;
    background-color: #F2F2F2;
-   margin-top:50px;
+   margin-top:20px;
 }
 footer h2{
    font: 600 15px 'Raleway', sans-serif;
 }
 
 footer ul{
+   padding-left:15px;
    list-style: none;    
 }
 footer ul li{
-   padding:0 80px 0 10px;
+   padding-right:180px;
 }
 
 footer ul li a{
@@ -444,132 +412,333 @@ footer ul li a:hover{
 }
 /*  Fin de CSS desk top*/
 
-
-
-@media screen and (max-width:1024px){
-     main{
-        padding:10px;
-        margin:0;
-     }
-     header{
-        padding:10px 20px;
-        margin:0;
-     }
-   .location{
-      display: flex;
-      flex-direction: row-reverse;
-     margin-top:0;
+@media screen and (max-width:1280px){
+ 
+.hebergement{
+      background-color: #F2F2F2;
+      width:900px;
+      height:650px;
+      margin-right:5px;
    }
-   .populaire{
-      margin:0 10px;
-      position: relative;
-   }
-   .carte-conteneur .carte{
-      margin-right:60px;
-   }
-   .info{
-      margin:10px 20px;
-      padding:0;
-   }
-   .hébergement{
-      height:875px;
-      width:680px;
-      margin:0 10px;
-   }
-
-    .calanque , .calanque img, .ilesdefrioul, .ilesdefrioul img,
-    .fortdepomégue,.fortdepomégue img, .parc, .parc img, .églis,.églis img
-    {
-       width:280px;
-    
-    }
-    .activité{
-       margin:30px 0 0 10px;
-       background-color:#f7f7f7;
-       opacity:0.9;
-    }
-  .activité .vieuxport img {
-      width:355px;
+.hebergement h2{   
+     padding-left:47px;
+     } 
+.hebergement img{
+      width:230px;
       height:150px;
-   background-color:#f7f7f7;
-   }
-   .vieuxport{
-      position:absolute;
-      margin:0;
-      bottom:133px;
-      left:20px;
       border-radius:10px 10px 0 0;
-      
-   
-   }
-   .header-activité{
-      position:absolute;
-      bottom:310px;
-      left:20px;
-   }
+     }
+.carte{
+      width:230px;
+      height:230px;
+     }
 
-  .Rechercher .espaceblue:hover{
-     background-color:blue;
-   }
-   nav ul li a:hover{
-      color:blue;
-   }
-   nav ul li a.active1{
-      color: #0065FC;
-   }
-   .filtres-contenue .contenue:hover{
-      background-color:rgb(243, 242, 242);
+.carte-active-longue img{
+      width:291px;
+      height:450px;
+      border-radius:10px 10px 0 0;
    }
   
+.carte-active img{
+      width:291px;
+      height:193px;
+      border-radius:10px 10px 0 0;
+     
+   }
+ 
+Footer{
+   width:100%;
 }
-@media screen and (max-width:768px) {
-   .filtres-contenue .contenue{
-      margin: 30px 5px;
+  
+}
+@media screen and (max-width:1024px){
+   .hebergement{
+      width:800px;
+      height:800px;
    }
-   .hébergement{
-      height:1700px;
-   }
-   .carte-conteneur .carte  {
-       width:300px;
-   }
-   .carte-conteneur .carte img {
-      width:300px;
+   .hebergement img{
+      width:260px;
+      height:120px;
+      border-radius:10px 10px 0 0;
+     }
+.carte{
+      width:260px;
+      height:190px;
+     }
+ .aside-carte{
+      display:flex;
+      flex-flow:row wrap;
+      width:280px;
+      height:210px;
   }
-   .activité {
-      display: flex;
-      flex-direction: column;
-      background-color:transparent;
-      float:left;
-      position:absolute;
-      top:115%;
-      margin-right:10px;
-   }
-   .header-activité{
-      position: absolute;
-      bottom:-5%;
-      left:45px;
-   }
-   .fortdepomégue,.fortdepomégue img, .églis,.églis img, .parc, .parc img {
-       width:300px;
-       height:120px;
-      
-   }
-   .activité .vieuxport img {
-      width:300px;
-      height:120px;
-   }
-  .activité .vieuxport{
-      position: absolute;
-      bottom:98%;
-   }
-   .calanque, .calanque img{
-      height:120px;
-   }
-   footer ul {
-    padding:0 40px 0 20px;
-   }
+  .populaire{
+   width:450px;
+   height:800px;
+}
+.populaire img{
+   width:280px;
+   height:130px;
+   border-radius:10px 10px 0 0;
+}
+.populaire h2{
+   margin-bottom:5px;
+   padding-top:22px;
+}
 
+.populairecontainer .fa{
+   padding-top:0px;  
+}
+.conteneur-asidecarte{
+   margin-top:10px;
+} 
+.carte-active-longue img{
+   width:231px;
+   height:330px;
+
+}
+.carte-active img{
+   width:231px;
+   height:135px;
+}
+ .activite p{
+   font: 600 15px 'Raleway', sans-serif;
+}
+}
+
+@media screen and (max-width:768px){
+    .populaire{
+       width:300px;
+    }
+ 
+.contenue {
+     margin:25px 5px
+  }
+
+.aside-carte {
+       width:180px;
+      height:250px;
+     
+  }
+.populaire img{
+   width:180px;
+   height:150px;
+   border-radius:10px 10px 0 0;
+}
+.populaire h3{
+   margin-top:0;
+}
+
+.hebergement img{
+   width:200px;
+   height:150px;
+   border-radius:10px 10px 0 0;
+  }
+  .carte{
+   width:200px;
+   height:230px;
+  
+}
+.hebergement{
+   width:700px;
+   height:900px;
+}
+.populaire{
+   height:900px;
+   border-radius:0;
+}
+.populairecontainer .fas{
+   display:none;
+  } 
+.populaire h2{
+   padding-left:20px;
+}
+footer ul li{
+   padding-right:70px;
+}
+
+}
+@media screen and (max-width:414px){
+
+nav{
+   display:flex;
+   flex-direction:column;
+}
+nav ul{
+   padding-left:40px;
+   border-bottom:2px rgb(219, 219, 219) solid;
+   padding-bottom:10px;
+}
+nav ul li{
+   padding-right:0px;
+}
+nav ul li a:hover{
+   color: #0065FC;
+   border-top:none;
+   border-bottom:2px #0065FC solid;
+   padding-bottom:10px;
+}
+.active2{
+  position:relative;
+  bottom:50px;
+
+}
+
+.active1{
+   border-top:none;
+   padding-top:0;
+}
+.Rechercher{
+   display:flex;
+   flex-flow:row wrap;
+}
+.Titre h1{
+   font-size:20px;
+}
+.Filtres{
+   display:block;
+}
+.contenue{
+   margin:10px 20px 10px 0;
+   padding-right:15px;
+}
+.paragraph{
+   margin-left:0;
+}
+.populaire{
+ width:380px;
+ height:600px;
+ margin-left:0;
+}
+.populaire h3{
+   margin-top:10px;
+   font-size:14px;
+}
+.populaire .fa{
+   padding-top:50px;
+   padding-top:60px;
+}
+.aside-carte img{
+   width:140px;
+   margin-right:0;
+   border-radius:10px 0 0 10px;
+   margin-right:5px;
+}
+.aside-carte{
+   display:flex;
+   flex-flow:row wrap;
+   width:350px;
+   height:150px;
+}
+
+
+.location{
+   display:flex;
+   flex-direction:column-reverse;
+}
+
+.hebergement{
+   width:380px;
+   height:1650px;
+   background-color:white;
+   
+  }
+.hebergement h2{
+   padding-left:15px;
+}
+.carte{
+   width:370px;
+  height:225px;
+  box-shadow:2px 2px 2px 2px rgb(241, 238, 238);
+}
+.carte img{
+   width:370px;
+  height:150px;
+}
+  
+.activite{
+   display:flex;
+   flex-direction:column;
+}
+ .carte-active-conteneur{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    
  }
 
+.activite img{
+   width:375px;
+   height:160px;
+}
+
+
+footer{
+   display:flex;
+   flex-direction:column;
+   height:100%;
+}
+footer u li{
+margin:7px 0;
+}
+footer ul li a{
+   font-size:15px;
+}
+
+}
+
+@media screen and (max-width:375px){
  
+   nav{
+      display:flex;
+   }
+  nav ul{
+     display:flex;
+     flex-direction:row;
+     padding-bottom:0px; 
+}
+nav ul li a:hover{
+   color: #0065FC;
+   border-top:none;
+   border-bottom:2px #0065FC solid;
+   padding-bottom:17px;
+}
+   .active2 {
+   position:relative;
+    left:180px;
+    bottom:70px;
+   }
+   .populaire{
+      width:345px;
+      height:600px;
+      margin-left:0;
+     }
+     .aside-carte{
+      width:320px;
+      height:150px;
+   }
+   .hebergement{
+      width:340px;
+      height:1650px;
+      background-color:white;
+      
+     }
+   .hebergement h2{
+      padding-left:0;
+   }
+
+   .carte{
+      width:340px;
     
+   }
+   .carte img{
+      width:340px;
+ }
+   .activite img{
+      width:350px;
+      height:160px;
+   }
+   
+  
+}
+
+
