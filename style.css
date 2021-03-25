@@ -622,6 +622,9 @@ nav ul li a:hover{
 .Titre h1{
   font-size:20px;
 }
+.Rechercher{
+  width:320px;
+}
 .Filtres{
   display:block;
 }
