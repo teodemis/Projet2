@@ -1,28 +1,18 @@
    
-   /* TODO
-    toutes les images et cartes
-   -image: ajoute min-width et min-height max- width et max-height
-   - image et carte  mettre width en pourcentage 
-   
-   -résponsive:commencer la media query de 375px
-   */
 
-
- /* debut de body */
 body{
    margin:0;
    padding:0;
    box-sizing: border-box;
-
 }
 header{
  padding:0 15px;
 }
 
 nav {
-  display: flex;
- justify-content: space-between;
- padding-top:30px;
+display: flex;
+justify-content: space-between;
+padding-top:30px;
 }
 
 nav ul{
@@ -41,15 +31,22 @@ text-decoration: none;
 nav ul li a:hover{
 color: #0065FC;
 border-top:#0065FC 2px solid;
-padding-top:40px;
+padding-top:45px;
 
 }
 
 .active1{
 color:#0065FC;
 border-top:#0065FC 2px solid;
-padding-top:40px;
+padding-top:45px;
 }
+.active2{
+  color:#0065FC;
+}
+.active2:hover{
+  color:#076aff;
+}
+
 .Titre h1{
   font:600 22px 'Raleway', sans-serif;
   margin-bottom:5px;
@@ -189,13 +186,12 @@ input {
   display:flex;
   flex-flow:row wrap;
   justify-content: center;
-  width:100%;
   height:auto;
    
 }
 
 .carte img{
-min-width:250px;
+width:250px;
 height:150px;
 border-radius:10px 10px 0 0;
 object-fit: cover;
@@ -348,15 +344,15 @@ right:20px;
 
 #header-activite{
   font: 600 20px 'Raleway', sans-serif;
-  padding-left:15px;
-  margin-top:20px;
+  padding-left:18px;
+  margin:25px 0 0 0;
 }
 .carte-active-conteneur p{
   font: 600 15px 'Raleway', sans-serif;
   padding:0 10px;
 }
 .carte-active-conteneur img{
-  width:292px;
+  width:293px;
   object-fit:cover;
   height:auto;
 }
@@ -366,6 +362,7 @@ right:20px;
  
 }
 .carte-longue{
+  max-width:100%;
   border:1px solid rgb(238, 236, 236);
   background-color:white;
   margin:10px;
@@ -551,12 +548,46 @@ input{
    padding-left:20px;
    margin-bottom:5px;
  }
+}
+@media screen and (min-width:377px) and (max-width:1255px){
  
- 
+  .hebergement{
+    width:60%;
+  }
+  .populaire{
+    width:60%;
+  }
+  .carte img{
+    width:100%;
+  }
+.carte{
+     width:100%;
+  }
+  .populairecontainer .fa{
+   padding-top:0px;
+  }
+  .aside-carte img{
+    width:100%;
+    height:100%;
+}
+.aside-carte{
+  height:100%;
+}
+.populairecontainer h2{
+  font-size:17px;
+} 
+.carte-active-conteneur img{
+  width:100%;
+}
+.carte-active-conteneur{
+  width:100%;
+}
+footer ul {
+  padding-right:20px;
+}
 
 }
- 
- 
+
 
 
 
