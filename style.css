@@ -151,7 +151,7 @@ input {
 
 .info{
   display:flex;
-  padding:0 0 15px 15px;
+  padding:0 0 15px 0px;
  }
 
 .info .fas{
@@ -310,7 +310,6 @@ span{
 position:absolute;
 top:40px;
 right:20px;
-
 }
 .populairecontainer p{
   font: 500 12px 'Raleway', sans-serif;
@@ -347,11 +346,11 @@ right:20px;
   padding-left:18px;
   margin:25px 0 0 0;
 }
-.carte-active-conteneur p{
+.carte-activite-conteneur p{
   font: 600 15px 'Raleway', sans-serif;
   padding:0 10px;
 }
-.carte-active-conteneur img{
+.carte-activite-conteneur img{
   width:293px;
   object-fit:cover;
   height:auto;
@@ -381,7 +380,7 @@ right:20px;
   box-shadow:1px 1px 1px 0.5px rgb(214, 211, 211);
   border-radius:12px;
  }
-.carte-active-conteneur{
+.carte-activite-conteneur{
   display:flex;
   flex-flow:row wrap;
   justify-content:center;
@@ -457,6 +456,7 @@ footer ul li a:hover{
   .active1{
     border-top:none;
     margin:0 auto;
+    padding-top:0;
     
    }
    nav ul li a:hover{
@@ -552,41 +552,96 @@ input{
 @media screen and (min-width:377px) and (max-width:1255px){
  
   .hebergement{
-    width:60%;
+    width:57%;
+    background-color: red;
   }
-  .populaire{
-    width:60%;
+  .hebergement h2{
+    padding-left:40px;
   }
+  
   .carte img{
     width:100%;
   }
 .carte{
-     width:100%;
+     width:50%;
+     height:450px;
   }
-  .populairecontainer .fa{
+ .populaire{
+    width:40%;
+  }
+.populairecontainer .fas{
+    right:40px;
+    }
+.populairecontainer .fa{
    padding-top:0px;
   }
-  .aside-carte img{
+.populairecontainer h2{
+    padding-left:60px;
+  }
+
+.aside-carte img{
     width:100%;
-    height:100%;
+     height:450px;
+     border-radius:12px 12px 0 0;
 }
 .aside-carte{
+  width:90%;
   height:100%;
 }
 .populairecontainer h2{
   font-size:17px;
 } 
-.carte-active-conteneur img{
+.carte-longue{
+  width:24%;
+  height:auto;
+}
+.carte-longue img{
+  width:100%;
+ 
+}
+.carte-activite{
+  width:2%;
+  height:300px;
+}
+.carte-activite img{
   width:100%;
 }
-.carte-active-conteneur{
-  width:100%;
+
+#header-activite{
+  padding-left:20px;
 }
 footer ul {
   padding-right:20px;
 }
 
 }
+@media screen and (min-width:1290px) {
+  .carte img{
+    width:100%;
+  }
+  .carte{
+    width:30%;
+  }
+  .carte-activite{
+    width:20%;
+  }
+  .carte-longue{
+    width:20%;
+  }
+  .carte-longue img{
+    width:100%;
+  }
+  .carte-activite img{
+    width:100%;
+  }
+  
+
+  }
+  
+
+ 
+  
+
 
 
 
