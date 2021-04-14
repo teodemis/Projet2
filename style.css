@@ -1,4 +1,6 @@
-   
+
+
+
    body{
    margin:0;
    padding:0;
@@ -45,6 +47,9 @@ padding-top:45px;
 }
 .btn-inscrire:hover{
   color:#076aff;
+}
+.nav-contneur{
+  display:flex;
 }
 
 /* titre */
@@ -176,7 +181,7 @@ input {
   color:rgb(71, 70, 70);
   padding-left:5px;
 } 
-/* fin d'info */
+  /* fin d'info */
 /* fin de header */
 
   /* debute de section */
@@ -184,7 +189,7 @@ input {
   /* section location */
 
   /* section d'article */
-article{
+.hebergement{
   display:flex;
   justify-content: center;
   background-color: #F2F2F2;
@@ -202,15 +207,14 @@ article{
 }
 
 .carte img{
-width:250px;
+width:100%;
 height:150px;
 border-radius:10px 10px 0 0;
 object-fit: cover;
 }
 .carte{
-  display:flex;
-  flex-flow:row wrap;
-  width:250px;
+  display:block;
+  width:28%;
   height:230px;
   background-color:white;
   border: 5px rgb(255, 255, 255) solid;
@@ -224,7 +228,7 @@ object-fit: cover;
 }
 .hebergement h2{   
  font: 600 18px 'Raleway', sans-serif; 
- padding:20px 0 0 20px; 
+ padding:20px 0 0 30px; 
  margin-bottom:0;
 
 }  
@@ -282,18 +286,16 @@ span{
   border-radius:10px;
 }
 .aside-carte img{
- width:20%;
-  height:auto;
-  width:150px;
+  width:90%;
+  width:140px;
   height:145px;
   border-radius:10px 0 0 10px;
   object-fit: cover;
-   float:left;
+  float:left;
   margin-right:5px;
 }
 .aside-carte{
   display: flex;
-  flex-flow:row wrap;
   width:90%;
   border:rgb(255, 255, 255) solid 5px;
   background-color:white;
@@ -333,9 +335,7 @@ right:20px;
   color:rgb(230, 225, 225);
   letter-spacing:-12px;
 }
-.group1 .fa, .group3 .fa{
-  padding-top:70px;
-}
+
 .populairecontainer .checked{
   color:  #0065FC;
 }
@@ -353,42 +353,50 @@ right:20px;
 
 #header-activite{
   font: 600 20px 'Raleway', sans-serif;
-  padding-left:18px;
+  padding-left:15px;
   margin:25px 0 0 0;
 }
 .carte-activite-conteneur p{
   font: 600 15px 'Raleway', sans-serif;
-  padding:0 10px;
+  
 }
 .carte-activite-conteneur img{
-  width:293px;
   object-fit:cover;
   height:auto;
-}
+} 
 .carte-longue img{
+  width:100%;
   height:360px;
   border-radius:12px 12px 0 0;
  
 }
 .carte-longue{
-  max-width:100%;
+  width:23%;
   border:1px solid rgb(238, 236, 236);
   background-color:white;
-  margin:10px;
+  margin:12px;
   height:394px;
-  box-shadow:1px 1px 1px 0.5px rgb(214, 211, 211);
+  box-shadow:1px 1px 1px 0.9px rgb(235, 235, 235);
   border-radius:12px;
 }
-.carte-courte img{
-  height:155px;
+.carte-activite{
+  width:22%;
   border-radius:12px 12px 0 0;
+  margin:12px; 
+}
+
+.carte-courte img{
+  width:100%;
+  height:153px;
+  border-radius:10px 10px 0 0;
 }
 .carte-courte{
   border:1px solid rgb(236, 234, 234);
   background-color:white;
-  margin:10px 10px 20px 10px;
-  box-shadow:1px 1px 1px 0.5px rgb(214, 211, 211);
+  box-shadow:1px 1px 1px 0.5px rgb(243, 241, 241);
   border-radius:12px;
+  margin-bottom:22px;
+  height:186px;
  }
 .carte-activite-conteneur{
   display:flex;
@@ -396,7 +404,7 @@ right:20px;
   justify-content:center;
 
 
-}
+} 
 .carte-courte:hover{ 
   background-color:rgb(241, 241, 241);
   opacity:0.9;
@@ -423,7 +431,7 @@ footer h2{
 }
 
 footer ul{
-  padding-left:15px;
+  padding-left:20px;
   list-style: none;    
 }
 footer ul li{
@@ -439,258 +447,23 @@ footer ul li a:hover{
   color:#0065FC;
 }
 
-@media screen and (max-width:376px) {
-  nav{
-    display:block;  
-}
-  nav ul{
-    display:flex;
-    justify-content: center;
-    padding-left:10px;
-    margin-top:10px;
-    border-bottom:2px rgb(207, 207, 207) solid;
-}
-  nav ul li{
-    padding:0 30px;
-  }
-  
-.btn-inscrire{
-    position:relative;
-    bottom:60px;
-    left:120px;
-}
-.btn-hebergement,.btn-activite:hover{
-  border-bottom:2px solid #0065FC;
-  padding-bottom:18px;
-  
-}
-  .btn-hebergement{
-    border-top:none;
-    margin:0 auto;
-    padding-top:0;
-}
-   nav ul li a:hover{
-    border-top:none;
-}
-   .Titre p{
-     margin-left:0;
-}
-   
-.espaceblue{
-  display: none;
-  
-}
-input{
-  border-right:none;
-}
-.mob-cherchebtn{
-  display:block;
-  background-color:#0065FC;
-  color:white;
-  width:40px;
-  margin-right:30px;
-  border-radius:10px;
-  border: none;
-}
-   .Filtres{
-     display:flex;
-     flex-direction:column;
-   }
-   .filtres-contenu{
-    display: flex;
-    flex-flow: row wrap;
-  }
-  .contenu{
-    margin:15px 15px 10px 0px;
-  }
-  .location{
-    display:flex;
-    flex-direction:column-reverse;
-    justify-content:center;
-  }
 
- .populaire{
-   display:flex;
-   background-color:#F2F2F2;
-   width:100%;
-   margin-left:0;
-   border-radius:0;
- }
- .populaire h2{
-   padding-left:17px;
- }
- .populairecontainer .fas{
-  right:15px;
-  
-  }
- .hebergement{
-  display:flex;
-  background-color:transparent;
-  width:100%;
-  margin-top:20px;
- }
- .carte{
-   width:340px;
-   box-shadow:2px 2px 2px 0.9px rgb(231, 229, 229);
-    
- }
- .plus{
-   padding:0;
- }
- .carte img{
-   width:340px;
- }
- .carte-courte img{
-  width:340px;
- }
- 
- .carte-longue img{
-  width:340px;
-  height:155px;
- }
- .carte-longue {
-  width:340px;
-   height:187px;
- }
- #header-activite{
-   padding-left:20px;
-   margin-bottom:5px;
- }
+/*  */
 
-}
-@media screen and (min-width:377px) and (max-width:486px){
-  
-  nav{
-    display:flex;
-    flex-flow:row wrap;
-    
-  }
-  nav ul{
-    border-bottom:2px solid gray;
-  }
-  .btn-inscrire{
-    position:relative;
-    bottom:70px;
-    left:0px;
-}
-nav ul li a:hover{
-  border-top:none;
-  border-bottom:2px solid #0065FC;
-}
-
-  .btn-hebergement{
-    border-top:none;
-}
-
-.location{
-  display:flex;
-  flex-direction:column-reverse;
-}
-.populaire{
-  width:100%;
-  margin-left:0;
-  border-radius:0px;
-}
-.hebergement{
-  width:100%;
-  margin-top:10px;
-  border-radius:0px;
-}
-.carte {
-  width:90%;
-  display:block;
-}
-.carte img{
-  width:100%;
-}
-.carte-activite{
-  width:95%;
-}
-.carte-activite img{
-  width:100%;
-}
-.carte-longue{
-  width:90%;
-  height:187px;
-}
-.carte-longue img{
-  width:100%;
-   height:155px; 
-}
-
-}
-@media screen and (min-width:487px) and (max-width:662px){
-  .location{
-    display:flex;
-    flex-direction:column-reverse;
-  }
-  .populaire{
-    width:100%;
-    margin-left:0;
-  }
-  .populaire .fa{
-    padding-top:0;
-  }
-  .populaire .fas {
-    right:30px;
-  }
-  .populaire h2{
-    margin-bottom:0;
-    padding-left:25px;
-  }
-  .aside-carte img{
-    width:100%;
-    height:70%;
-    border-radius:12px 12px 0 0;
-    object-fit:cover;
-  }
-  .aside-carte{
-   display:block;
-   width:90%;
-   height:230px;
-   margin:10px 0;
-  }
-  .hebergement{
-    width:100%;
-  }
-  .carte{
-   width:90%;
-   height:auto;
-   display:block;
-  }
-  .carte img{
-    width:100%;
-    height:160px;
-    object-fit:cover;
-  }
-  .carte-activite-conteneur{
-    display:block;
-  }
-  .carte-longue img{
-    width:100%;
-    height:200px;
-  }
-  .carte-courte img{
-    width:100%;
-    height:200px
-  }
-  .carte-longue{
-    height:230px;
-  }
-  
-}
-
-@media screen and (min-width:663px) and (max-width:1270px){
+@media screen and (min-width:663px) and (max-width:1024px){
   
    .location{
      display:block;
    }
+   .contenu{
+     margin:30px 10px;
+   }
   .hebergement{
     width:100%;
     border-radius:0;
-
-  }
-  .hebergement h2{
+}
+  
+.hebergement h2{
     padding-left:20px;
   }
   
@@ -707,7 +480,7 @@ nav ul li a:hover{
     flex-direction:row;
     width:100%;
     margin:15px 0 0 ;
-    height:650px;
+    height:500px;
     border-radius:0;
   }
  
@@ -717,16 +490,22 @@ nav ul li a:hover{
 .populairecontainer .fa{
    padding-top:0px;
   }
+.populairecontainer h3{
+  padding-top:10px;
+}
+
 .aside-carte img{
     width:100%;
      border-radius:12px 12px 0 0;
-     margin-bottom:5px;
-     height:80%;
+     height:300px;
 }
+
 .aside-carte{
-  width:29%;
+  width:28%;
  display:block;
   margin:0 10px;
+  height:80%;
+  
 }
 
 .populairecontainer h2{
@@ -737,13 +516,13 @@ nav ul li a:hover{
    width:100%;
 }
 .carte-longue{
-  width:48%;
+  width:46%;
 }
 .carte-longue img{
   width:100%;
 }
 .carte-activite{
-  width:48%;
+  width:46%;
   height:auto;
 }
 .carte-activite img{
@@ -753,39 +532,102 @@ nav ul li a:hover{
 #header-activite{
   padding-left:30px;
 }
-footer ul {
-  padding-right:20px;
+footer ul{
+  padding-left:20px;
+}
+footer ul li {
+  padding-right:25px;
 }
 
+} 
+
+@media screen and (min-width:100px) and (max-width:662px){
+  nav {
+    display:block;
+  }
+  nav ul{
+    display:block;
+    padding-left:0;
+    border-bottom:2px rgb(236, 234, 234) solid;
+  }
+  nav ul li a:hover{
+    border-top:none;
+    border-bottom:2px #0065FC solid;
+    padding-bottom:20px;
+  }
+  .btn-hebergement{
+    border-top:none;
+    border-bottom:2px #0065FC solid;
+    padding-bottom:20px;
+    padding-right:30px;
+    padding-left:40px;
+  }
+  .btn-inscrire{
+    position:relative;
+    bottom:70px;
+    left:180px;
+  }
+  .Filtres{
+    display:block;
 }
-@media screen and (min-width:1290px) {
- 
-  #hebergement{
-     padding-left:40px;
-   }
-  .carte img{
+.mob-cherchebtn{
+  display:block;
+  background-color:#0065FC;
+  color:white;
+  width:45px;
+  border-radius:10px;
+  border:none;
+  
+}
+.espaceblue{
+  display:none;
+}
+input{
+  display:flex;
+  width:40%;
+  padding-left:10px;
+  border-right:none;
+}
+.contenu{
+  margin:14px 10px 0 0;
+}
+.info{
+  margin-top:20px;
+}
+  .location{
+    display:flex;
+    flex-direction:column-reverse;
+  }
+  .populaire{
     width:100%;
+    margin-left:0;
+    border-radius:0;
+    margin-bottom:20px;
+  }
+  .aside-carte img{
+    width:150px;
+  }
+  .hebergement{
+    width:100%;
+    border-radius:0;
+    margin-top:20px;
   }
   .carte{
-    display:block;
-    width:29%;
-  }
-  
-  .carte-activite{
-    width:48%;
+    width:90%;
   }
   .carte-longue{
-    width:49%;
+    width:95%;
+     height:186px;
   }
   .carte-longue img{
-    width:100%;
-  }
-  .carte-activite img{
-    width:100%;
-  }
-  #header-activite{
-    padding-left:30px;
-  }
+    height:155px;
   }
 
-  /* FIN DE CSS */
+  .carte-activite{
+    width:95%;
+  }
+}
+  
+
+
+/* /* FIN DE CSS
