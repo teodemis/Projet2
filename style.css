@@ -1,55 +1,54 @@
 
-
-
    body{
    margin:0;
    padding:0;
    box-sizing: border-box;
+   max-width:1600px;
+   margin:0 auto; 
+
 }
-/* header */
-header{
- padding:0 15px;
-}
-/* nav */
-nav {
-display: flex;
-justify-content: space-between;
-padding-top:30px;
+ main{
+margin:0 15px;
 }
 
+/* header */
+  header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-basis: 97%;
+  margin:0 15px;
+}
 nav ul{
-display: flex;
-flex-flow:row wrap;
-list-style:none;
+  display:flex;
+  list-style:none;
 }
 nav ul li{
-padding-left:40px; 
-}
-nav ul li a{
-font: 500 14px 'Raleway', sans-serif;
-color: rgb(66, 65, 65);
-text-decoration: none;
-}
-nav ul li a:hover{
-color: #0065FC;
-border-top:#0065FC 2px solid;
-padding-top:45px;
+  padding:0 20px;
 
 }
 
-.btn-hebergement{
-color:#0065FC;
-border-top:#0065FC 2px solid;
-padding-top:45px;
+header a{
+  font:500 15px 'Raleway', sans-serif; 
+  text-decoration:none;
+ ;
 }
-.btn-inscrire{
+header a:hover{
+  color: #0065FC;
+   border-top:2px solid #0065FC;
+   padding-top:30px;
+}
+
+.btn-inscrire1{
+  display:none;
   color:#0065FC;
 }
-.btn-inscrire:hover{
-  color:#076aff;
-}
-.nav-contneur{
-  display:flex;
+.btn-inscrire2{
+  display:visible;
+  color:#0065FC;
+  padding-right:7px;
+    
 }
 
 /* titre */
@@ -68,6 +67,7 @@ padding-top:45px;
 /* fin de titre */
 
 /* reacherche */
+
 .Rechercher{
   display:flex;
   flex-flow:row wrap;
@@ -191,7 +191,6 @@ input {
   /* section d'article */
 .hebergement{
   display:flex;
-  justify-content: center;
   background-color: #F2F2F2;
   width:67%;
   min-height:650px;
@@ -272,22 +271,20 @@ span{
  /* debute de section aside */
 .location{
   display:flex;
-  justify-content:center;
 }
 
 .populaire{
   display: flex;
-  flex-flow:row ;
-  flex-wrap:wrap;
+  /* flex-flow:row ;
+  flex-wrap:wrap; */
   position: relative;
   background-color:#F2F2F2;
-  width:30%;
-  margin-left:10px;
+  width:35%;
+  margin-left:20px;
   border-radius:10px;
 }
 .aside-carte img{
-  width:90%;
-  width:140px;
+  width:145px;
   height:145px;
   border-radius:10px 0 0 10px;
   object-fit: cover;
@@ -305,7 +302,7 @@ span{
 
 .conteneur-asidecarte{
   display:flex;
-  flex-flow:row wrap;
+   flex-flow:row wrap;
   justify-content: center;
 }
 .populairecontainer h2{
@@ -344,34 +341,32 @@ right:20px;
   opacity:0.9;
   border-radius:10px 0 0 10px;
 }
-
-
 /* fin de section aside */
-
 
 /* section activite */
 
 #header-activite{
   font: 600 20px 'Raleway', sans-serif;
-  padding-left:15px;
+  padding-left:0px;
   margin:25px 0 0 0;
 }
 .carte-activite-conteneur p{
   font: 600 15px 'Raleway', sans-serif;
+  padding-left:10px;
   
 }
 .carte-activite-conteneur img{
   object-fit:cover;
-  height:auto;
+  /* height:auto; */
 } 
 .carte-longue img{
-  width:100%;
+  width:100%; 
   height:360px;
   border-radius:12px 12px 0 0;
  
 }
 .carte-longue{
-  width:23%;
+  width:26%;
   border:1px solid rgb(238, 236, 236);
   background-color:white;
   margin:12px;
@@ -380,12 +375,12 @@ right:20px;
   border-radius:12px;
 }
 .carte-activite{
-  width:22%;
+  width:26%;
   border-radius:12px 12px 0 0;
   margin:12px; 
 }
 
-.carte-courte img{
+.carte-activite img{
   width:100%;
   height:153px;
   border-radius:10px 10px 0 0;
@@ -400,10 +395,7 @@ right:20px;
  }
 .carte-activite-conteneur{
   display:flex;
-  flex-flow:row wrap;
-  justify-content:center;
-
-
+  justify-content:center; 
 } 
 .carte-courte:hover{ 
   background-color:rgb(241, 241, 241);
@@ -413,6 +405,11 @@ right:20px;
   background-color:rgb(241, 241, 241);
   opacity:0.9;
 }
+ .activite{
+   display:flex;
+   flex-flow:row wrap;
+   width:100%;
+} 
 
 /* Fin de section d'activite */
 
@@ -431,11 +428,11 @@ footer h2{
 }
 
 footer ul{
-  padding-left:20px;
-  list-style: none;    
+  padding-left:30px;
+  list-style:none;    
 }
 footer ul li{
-  padding-right:180px;
+  padding-right:330px;
 }
 
 footer ul li a{
@@ -445,13 +442,21 @@ footer ul li a{
 }
 footer ul li a:hover{
   color:#0065FC;
-}
-
-
-/*  */
-
+} 
 @media screen and (min-width:663px) and (max-width:1024px){
-  
+   header{
+     margin:0 15px;
+   }
+  main{
+    margin:0 15px;
+  }
+ 
+  .btn-inscrire1{
+    display:none;
+  }
+  .btn-inscrire2{
+    display:block;
+  }
    .location{
      display:block;
    }
@@ -501,8 +506,8 @@ footer ul li a:hover{
 }
 
 .aside-carte{
-  width:28%;
- display:block;
+  width:28.5%;
+  display:block;
   margin:0 10px;
   height:80%;
   
@@ -513,7 +518,10 @@ footer ul li a:hover{
   padding-left:40px;
 } 
 .carte-activite-conteneur{
-   width:100%;
+  display:flex;
+   flex-flow: row wrap;
+   justify-content:space-between;
+}
 }
 .carte-longue{
   width:46%;
@@ -536,39 +544,76 @@ footer ul{
   padding-left:20px;
 }
 footer ul li {
-  padding-right:25px;
-}
-
+  padding-right:150px;
 } 
 
+
 @media screen and (min-width:100px) and (max-width:662px){
-  nav {
+
+ main{
+    margin:0 15px;
+  }  
+header{
+ display:flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom:1px solid gray;
+  margin:0 15px;
+ 
+}
+.btn-inscrire2{
+  display:none;
+}
+.btn-inscrire1{
+  padding:18px 30px 0 0;
+  display:block;
+
+}
+ .group-nav{
+  display:flex;
+  justify-content: space-between;
+   flex-basis:100%;
+} 
+nav{
+  display:flex;
+  flex-wrap:wrap;
+  flex-basis:100%;
+}
+nav ul{
+  display:flex;
+  justify-content:space-between;
+  border-bottom:2px solid #0065FC;
+  width:40%;
+  padding-bottom:20px;
+  margin-bottom:0;
+}
+ .btn-activite:hover{
+  border-bottom:2px solid #0065FC;
+  padding-bottom:20px;
+  
+ }
+ .btn-activite{
+   padding-left:70px;
+ }
+nav ul li a:hover{
+  border-top:none;
+}
+
+.Filtres{
     display:block;
-  }
-  nav ul{
-    display:block;
-    padding-left:0;
-    border-bottom:2px rgb(236, 234, 234) solid;
-  }
-  nav ul li a:hover{
-    border-top:none;
-    border-bottom:2px #0065FC solid;
-    padding-bottom:20px;
-  }
-  .btn-hebergement{
-    border-top:none;
-    border-bottom:2px #0065FC solid;
-    padding-bottom:20px;
-    padding-right:30px;
-    padding-left:40px;
-  }
-  .btn-inscrire{
-    position:relative;
-    bottom:70px;
-    left:180px;
-  }
-  .Filtres{
-    display:block;
+}
+.filtres-contenu{
+  display:flex;
+  flex-flow:row wrap;
+  padding-right:30px;
+}
+.contenu {
+  padding-right:25px;
+  margin:0 20px;
+}
+
+.btn-hebergement{
+  border-top:none;
 }
 .mob-cherchebtn{
   display:block;
@@ -613,21 +658,28 @@ input{
     margin-top:20px;
   }
   .carte{
-    width:90%;
+    width:95%;
   }
   .carte-longue{
-    width:95%;
+    width:100%;
      height:186px;
+  }
+  .carte-activite-conteneur{
+    display:flex;
+    flex-flow:row wrap;
   }
   .carte-longue img{
     height:155px;
   }
 
   .carte-activite{
-    width:95%;
+    width:100%;
   }
-}
+  #header-activite{
+    padding-left:20px;
+  }
+
+   }
+
   
-
-
-/* /* FIN DE CSS
+/* FIN DE CSS*/
