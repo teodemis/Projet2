@@ -1,6 +1,5 @@
 
    body{
-   margin:0;
    padding:0;
    box-sizing: border-box;
    max-width:1600px;
@@ -25,16 +24,16 @@ nav ul{
   list-style:none;
 }
 nav ul li{
-  padding:0 20px;
+  padding-left:50px;
 
 }
 
 header a{
   font:500 15px 'Raleway', sans-serif; 
   text-decoration:none;
- ;
+
 }
-header a:hover{
+nav ul li a:hover{
   color: #0065FC;
    border-top:2px solid #0065FC;
    padding-top:30px;
@@ -47,7 +46,6 @@ header a:hover{
 .btn-inscrire2{
   display:visible;
   color:#0065FC;
-  padding-right:7px;
     
 }
 
@@ -284,8 +282,8 @@ span{
   border-radius:10px;
 }
 .aside-carte img{
-  width:145px;
-  height:145px;
+ width:145px;
+  height:100%;
   border-radius:10px 0 0 10px;
   object-fit: cover;
   float:left;
@@ -294,6 +292,7 @@ span{
 .aside-carte{
   display: flex;
   width:90%;
+  height:150px;
   border:rgb(255, 255, 255) solid 5px;
   background-color:white;
   border-radius: 10px;
@@ -326,7 +325,7 @@ right:20px;
 }
 
 .populairecontainer .fa{
-  padding-top:55px;
+  padding-top:70px;
   font-size:10px;
    font-size:11px;
   color:rgb(230, 225, 225);
@@ -348,7 +347,7 @@ right:20px;
 #header-activite{
   font: 600 20px 'Raleway', sans-serif;
   padding-left:0px;
-  margin:25px 0 0 0;
+  margin:25px 0 0 20px;
 }
 .carte-activite-conteneur p{
   font: 600 15px 'Raleway', sans-serif;
@@ -366,7 +365,7 @@ right:20px;
  
 }
 .carte-longue{
-  width:26%;
+  width:27%;
   border:1px solid rgb(238, 236, 236);
   background-color:white;
   margin:12px;
@@ -428,11 +427,11 @@ footer h2{
 }
 
 footer ul{
-  padding-left:30px;
+  padding-left:35px;
   list-style:none;    
 }
 footer ul li{
-  padding-right:330px;
+  padding-right:230px;
 }
 
 footer ul li a{
@@ -455,7 +454,7 @@ footer ul li a:hover{
     display:none;
   }
   .btn-inscrire2{
-    display:block;
+    display:visible;
   }
    .location{
      display:block;
@@ -537,19 +536,10 @@ footer ul li a:hover{
   width:100%;
 }
 
-#header-activite{
-  padding-left:30px;
-}
-footer ul{
-  padding-left:20px;
-}
-footer ul li {
-  padding-right:150px;
-} 
-
-
 @media screen and (min-width:100px) and (max-width:662px){
-
+   body{
+min-width:fit-content; 
+       }
  main{
     margin:0 15px;
   }  
@@ -567,8 +557,14 @@ header{
 .btn-inscrire1{
   padding:18px 30px 0 0;
   display:block;
-
 }
+.btn-inscrire1:hover{
+  border-bottom:2px solid #0065FC;
+}
+.contenu{
+  margin: 10px;
+}
+
  .group-nav{
   display:flex;
   justify-content: space-between;
@@ -583,13 +579,15 @@ nav ul{
   display:flex;
   justify-content:space-between;
   border-bottom:2px solid #0065FC;
-  width:40%;
+  width:45%;
   padding-bottom:20px;
   margin-bottom:0;
 }
  .btn-activite:hover{
   border-bottom:2px solid #0065FC;
   padding-bottom:20px;
+  flex-basis:50%;
+ 
   
  }
  .btn-activite{
@@ -598,6 +596,16 @@ nav ul{
 nav ul li a:hover{
   border-top:none;
 }
+.aside-carte img{
+  width:135px;
+}
+.aside-carte{
+  height:155px;
+}
+.populairecontainer .fa{
+  padding-top:45px;
+}
+
 
 .Filtres{
     display:block;
@@ -649,6 +657,9 @@ input{
     border-radius:0;
     margin-bottom:20px;
   }
+  .populairecontainer h2{
+    padding-left:25px;
+  }
   .aside-carte img{
     width:150px;
   }
@@ -656,6 +667,9 @@ input{
     width:100%;
     border-radius:0;
     margin-top:20px;
+  }
+  .hebergement h2{
+    padding-left:20px;
   }
   .carte{
     width:95%;
@@ -676,7 +690,7 @@ input{
     width:100%;
   }
   #header-activite{
-    padding-left:20px;
+    padding-left:0px;
   }
 
    }
