@@ -1,12 +1,12 @@
 
-   body{
+   body {
    padding:0;
    box-sizing: border-box;
    max-width:1600px;
    margin:0 auto; 
-
-}
- main{
+  }
+  
+ main {
 margin:0 15px;
 }
 
@@ -44,7 +44,7 @@ nav ul li a:hover{
   color:#0065FC;
 }
 .btn-inscrire2{
-  display:visible;
+  visibility:visible;
   color:#0065FC;
     
 }
@@ -282,7 +282,7 @@ span{
   border-radius:10px;
 }
 .aside-carte img{
- width:145px;
+  width:145px;
   height:100%;
   border-radius:10px 0 0 10px;
   object-fit: cover;
@@ -454,7 +454,7 @@ footer ul li a:hover{
     display:none;
   }
   .btn-inscrire2{
-    display:visible;
+   visibility: visible;
   }
    .location{
      display:block;
@@ -537,9 +537,10 @@ footer ul li a:hover{
 }
 
 @media screen and (min-width:100px) and (max-width:662px){
-   body{
-min-width:fit-content; 
-       }
+ 
+  body{
+    min-width:fit-content;
+  }
  main{
     margin:0 15px;
   }  
@@ -586,17 +587,17 @@ nav ul{
  .btn-activite:hover{
   border-bottom:2px solid #0065FC;
   padding-bottom:20px;
-  flex-basis:50%;
+  flex-basis:100%;
  
   
  }
  .btn-activite{
-   padding-left:70px;
+   padding-left:30px;
  }
 nav ul li a:hover{
   border-top:none;
 }
-.aside-carte img{
+.populaire img{
   width:135px;
 }
 .aside-carte{
